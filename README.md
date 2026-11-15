@@ -130,16 +130,18 @@ must be independently reviewed and sanitized before publication.
 - [Guide 03 — Python Processing and Synchronization](docs/en/guides/03-python-processing.md)
 - [Guide 04 — SQLite Persistence and Data Integrity](docs/en/guides/04-sqlite-persistence.md)
 - [Guide 05 — Executive Dashboard and Read-Only API](docs/en/guides/05-executive-dashboard.md)
+- [Guide 06 — Automation, Scheduling and Security](docs/en/guides/06-automation-security.md)
+- [Guide 07 — Validation and Lessons Learned](docs/en/guides/07-validation-lessons.md)
 
 ## Documentation Roadmap
 
-Additional documentation will cover:
+The seven-guide bilingual documentation series covers preparation,
+data acquisition, Python processing, SQLite persistence, executive
+visualization, automation and security, and validation lessons.
 
-- Architecture and data flow.
-- Processing layers and synchronization.
-- Dashboard design and capabilities.
-- Validation strategy.
-- Technical challenges and lessons learned.
+Further operational evidence is required before confirming a fully
+unattended cloud-to-local synchronization cycle. The project will
+record that confirmation separately when it is observed.
 
 ## Author
 

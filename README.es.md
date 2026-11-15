@@ -138,16 +138,18 @@ y anonimizarse antes de su publicación.
 - [Guía 03 — Procesamiento y sincronización con Python](docs/es/guides/03-python-processing.md)
 - [Guía 04 — Persistencia en SQLite e integridad de datos](docs/es/guides/04-sqlite-persistence.md)
 - [Guía 05 — Dashboard ejecutivo y API de solo lectura](docs/es/guides/05-executive-dashboard.md)
+- [Guía 06 — Automatización, programación y seguridad](docs/es/guides/06-automation-security.md)
+- [Guía 07 — Validación y lecciones aprendidas](docs/es/guides/07-validation-lessons.md)
 
 ## Hoja de ruta de documentación
 
-La documentación adicional abordará:
+La serie bilingüe de siete guías comprende preparación, adquisición,
+procesamiento con Python, persistencia SQLite, visualización ejecutiva,
+automatización y seguridad, y lecciones de validación.
 
-- Arquitectura y flujo de datos.
-- Capas de procesamiento y sincronización.
-- Diseño y capacidades del panel ejecutivo.
-- Estrategia de validación.
-- Desafíos técnicos y lecciones aprendidas.
+Antes de confirmar un ciclo integral desatendido entre la nube y el
+entorno local se requieren evidencias operativas independientes.
+El proyecto incorporará esa confirmación cuando se haya observado.
 
 ## Autor
 
