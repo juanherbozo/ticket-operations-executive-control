@@ -145,6 +145,7 @@ y anonimizarse antes de su publicación.
 - [Guía 02 — Adquisición de datos](docs/es/guides/02-data-acquisition.md)
 - [Guía 03 — Procesamiento y sincronización con Python](docs/es/guides/03-python-processing.md)
 - [Guía 04 — Persistencia en SQLite e integridad de datos](docs/es/guides/04-sqlite-persistence.md)
+- [Guía 05 — Dashboard ejecutivo y API de solo lectura](docs/es/guides/05-executive-dashboard.md)
 
 ## Hoja de ruta de documentación
 
