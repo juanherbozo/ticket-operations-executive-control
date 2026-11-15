@@ -1,10 +1,18 @@
 # Ticket Operations — Executive Control
 
+[English](README.md) | [Español](README.es.md)
+
 **Automated Data Pipeline & Executive Dashboard**
 
 A technical case study by **Juan Herbozo**
 
 *Business Systems · Integration · AI*
+
+## Reference Architecture
+
+![Ticket Operations architecture](assets/images/architecture-en.png)
+
+*Illustrative architecture diagram. Dashboard metrics and visual elements are representative and do not contain actual operational data.*
 
 ## Overview
 
