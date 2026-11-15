@@ -129,6 +129,12 @@ copies of internal business logic.
 Any future implementation examples or demonstration datasets
 must be independently reviewed and sanitized before publication.
 
+## Implementation guides
+
+### Available documentation
+
+- [Reference Architecture](docs/en/architecture.md)
+
 ## Documentation Roadmap
 
 Additional documentation will cover:

@@ -136,6 +136,12 @@ Cualquier ejemplo de implementación o conjunto de datos
 demostrativos que se incorpore en el futuro deberá revisarse
 y anonimizarse antes de su publicación.
 
+## Guías de implementación
+
+### Documentación disponible
+
+- [Arquitectura de referencia](docs/es/architecture.md)
+
 ## Hoja de ruta de documentación
 
 La documentación adicional abordará:
