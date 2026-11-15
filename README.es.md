@@ -48,21 +48,6 @@ La arquitectura separa la adquisición, transformación,
 persistencia y visualización en componentes que pueden validarse
 de forma independiente.
 
-## Tecnologías utilizadas
-
-| Componente | Tecnología |
-|---|---|
-| Datos operativos | Microsoft Dataverse |
-| Extracción de datos | Power Automate |
-| Intercambio de archivos | Microsoft OneDrive |
-| Formato de instantánea | JSON FULL |
-| Procesamiento de datos | Python |
-| Persistencia | SQLite |
-| Visualización | HTML, CSS, JavaScript |
-| API local | Servidor HTTP de Python |
-| Programación de tareas | Programador de tareas de Windows |
-| Control de versiones | Git y GitHub |
-
 ## Capacidades principales
 
 - Extracción automatizada de registros operativos.
@@ -94,9 +79,13 @@ La solución incorpora copias de seguridad de la base de datos,
 comprobaciones de integridad, auditoría de sincronización y
 mecanismos de protección frente al procesamiento duplicado.
 
+El Programador de tareas de Windows coordina las comprobaciones
+locales periódicas, de forma independiente de la recurrencia
+de extracción en la nube de Power Automate.
+
 ### Visualización de solo lectura
 
-El panel accede a SQLite mediante un servicio local limitado
+El panel accede a SQLite mediante un servidor HTTP de Python limitado
 a la interfaz de bucle local y no expone operaciones de
 modificación de la base de datos.
 
@@ -105,6 +94,9 @@ modificación de la base de datos.
 Las decisiones técnicas, los resultados de validación y los
 desafíos de implementación se documentan como parte del
 ciclo de vida del proyecto.
+
+Git y GitHub permiten controlar las versiones de la documentación
+pública y los recursos de arquitectura de referencia.
 
 ## Estado de validación
 

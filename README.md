@@ -46,21 +46,6 @@ SLA information, and time entries.
 The architecture separates acquisition, transformation, persistence,
 and visualization into independently validated components.
 
-## Technology Stack
-
-| Component | Technology |
-|---|---|
-| Operational data | Microsoft Dataverse |
-| Data extraction | Power Automate |
-| File exchange | Microsoft OneDrive |
-| Snapshot format | JSON FULL |
-| Data processing | Python |
-| Persistence | SQLite |
-| Visualization | HTML, CSS, JavaScript |
-| Local API | Python HTTP server |
-| Scheduling | Windows Task Scheduler |
-| Version control | Git and GitHub |
-
 ## Core Capabilities
 
 - Automated extraction of operational records.
@@ -91,15 +76,21 @@ presentation operate as separate components.
 The solution incorporates database backups, integrity checks,
 synchronization auditing, and safeguards against duplicate processing.
 
+Windows Task Scheduler coordinates periodic local synchronization checks
+independently of Power Automate's cloud extraction recurrence.
+
 ### Read-only visualization
 
-The dashboard accesses SQLite through a loopback-only local service
+The dashboard accesses SQLite through a loopback-only Python HTTP server
 and does not expose database modification operations.
 
 ### Traceability
 
 Technical decisions, validation results, and implementation
 challenges are documented as part of the project lifecycle.
+
+Git and GitHub provide version control for the public documentation
+and reference architecture assets.
 
 ## Validation Status
 
