@@ -141,6 +141,7 @@ y anonimizarse antes de su publicación.
 ### Documentación disponible
 
 - [Arquitectura de referencia](docs/es/architecture.md)
+- [Guía 01 — Preparación y requisitos previos](docs/es/guides/01-prerequisites.md)
 
 ## Hoja de ruta de documentación
 
