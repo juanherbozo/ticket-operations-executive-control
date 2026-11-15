@@ -29,19 +29,19 @@ SLA information, and time entries.
 
 ## Architecture
 
-```mermaid
-flowchart TD
-    A[Microsoft Dataverse] --> B[Power Automate]
-    B --> C[OneDrive / JSON FULL]
-    C --> D[Python Synchronization]
-    D --> E[RAW]
-    E --> F[STAGING 01]
-    F --> G[STAGING 02]
-    G --> H[FINAL]
-    H --> I[(SQLite)]
-    I --> J[Read-Only Local Server]
-    J --> K[Executive Dashboard]
-```
+| Component | Technology | Purpose |
+|---|---|---|
+| Operational data | Microsoft Dataverse | Source of incidents, requests, SLA and time entries |
+| Data acquisition | Power Automate | Scheduled extraction of full JSON snapshots |
+| File exchange | OneDrive / JSON FULL | Delivery of snapshots to local processing |
+| Synchronization | Python | Snapshot detection, verification and ingestion |
+| Source loading | RAW | Initial source-oriented data |
+| Integration | STAGING 01 | Dataset alignment and integration |
+| Business processing | STAGING 02 | Business rules and data transformations |
+| Analytical output | FINAL | Validated analytical representation |
+| Persistence | SQLite | Analytical information and processing controls |
+| Data access | Local read-only API | Controlled delivery of analytical information |
+| Presentation | HTML, CSS, JavaScript | Bilingual dashboard, charts, filters and PDF export |
 
 The architecture separates acquisition, transformation, persistence,
 and visualization into independently validated components.

@@ -30,19 +30,19 @@ incidencias, solicitudes, información de SLA y registros de tiempo.
 
 ## Arquitectura
 
-```mermaid
-flowchart TD
-    A[Microsoft Dataverse] --> B[Power Automate]
-    B --> C[OneDrive / JSON FULL]
-    C --> D[Sincronización con Python]
-    D --> E[RAW]
-    E --> F[STAGING 01]
-    F --> G[STAGING 02]
-    G --> H[FINAL]
-    H --> I[(SQLite)]
-    I --> J[Servidor local de solo lectura]
-    J --> K[Panel ejecutivo]
-```
+| Componente | Tecnología | Propósito |
+|---|---|---|
+| Datos operativos | Microsoft Dataverse | Origen de incidencias, solicitudes, SLA y registros de tiempo |
+| Adquisición de datos | Power Automate | Extracción programada de instantáneas JSON completas |
+| Intercambio de archivos | OneDrive / JSON FULL | Entrega de instantáneas al procesamiento local |
+| Sincronización | Python | Detección, verificación e incorporación de instantáneas |
+| Carga de origen | RAW | Información inicial orientada al origen |
+| Integración | STAGING 01 | Alineación e integración de datos |
+| Procesamiento de negocio | STAGING 02 | Reglas de negocio y transformaciones |
+| Resultado analítico | FINAL | Representación analítica validada |
+| Persistencia | SQLite | Información analítica y controles de procesamiento |
+| Acceso a datos | API local de solo lectura | Consulta controlada de información analítica |
+| Presentación | HTML, CSS, JavaScript | Dashboard bilingüe, gráficos, filtros y exportación PDF |
 
 La arquitectura separa la adquisición, transformación,
 persistencia y visualización en componentes que pueden validarse
