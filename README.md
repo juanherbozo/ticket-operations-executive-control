@@ -137,6 +137,7 @@ must be independently reviewed and sanitized before publication.
 - [Guide 01 — Preparation and Prerequisites](docs/en/guides/01-prerequisites.md)
 - [Guide 02 — Data Acquisition](docs/en/guides/02-data-acquisition.md)
 - [Guide 03 — Python Processing and Synchronization](docs/en/guides/03-python-processing.md)
+- [Guide 04 — SQLite Persistence and Data Integrity](docs/en/guides/04-sqlite-persistence.md)
 
 ## Documentation Roadmap
 
