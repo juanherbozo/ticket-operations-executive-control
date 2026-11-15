@@ -135,6 +135,7 @@ must be independently reviewed and sanitized before publication.
 
 - [Reference Architecture](docs/en/architecture.md)
 - [Guide 01 — Preparation and Prerequisites](docs/en/guides/01-prerequisites.md)
+- [Guide 02 — Data Acquisition](docs/en/guides/02-data-acquisition.md)
 
 ## Documentation Roadmap
 

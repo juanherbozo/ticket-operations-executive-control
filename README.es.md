@@ -142,6 +142,7 @@ y anonimizarse antes de su publicación.
 
 - [Arquitectura de referencia](docs/es/architecture.md)
 - [Guía 01 — Preparación y requisitos previos](docs/es/guides/01-prerequisites.md)
+- [Guía 02 — Adquisición de datos](docs/es/guides/02-data-acquisition.md)
 
 ## Hoja de ruta de documentación
 
